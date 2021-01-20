@@ -47,7 +47,7 @@ components: {
       name: "app",
       data() {
       	return {
-      	   url:'xxx.com/music/いつも何度でも.mp3'
+      	   url:'xxx.com/music/いつも何度でも.mp3',
       	   coverAudioBg: "red",
       	   coverAudioBtnBg: "#fff",
       	   activeColor: "pink",
