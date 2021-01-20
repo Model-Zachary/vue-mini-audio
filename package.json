@@ -1,0 +1,49 @@
+{
+  "name": "vue-mini-audio",
+  "description": "基于vue开发-音频播放小组件",
+  "version": "1.0.2",
+  "author": "model-zachary <model-zachary@qq.com>",
+  "license": "MIT",
+  "private": false,
+  "main": "./dist/vue-mini-audio.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "vue",
+    "vue-mini-audio",
+    "audio",
+    "vue component"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Model-Zachary/vue-mini-audio"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "vue": "^2.5.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.4",
+    "vant": "^2.12.4",
+    "vue-loader": "^13.0.5",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}

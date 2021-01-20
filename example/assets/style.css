@@ -1,0 +1,124 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.fsz {
+  font-size: 2.22222rem;
+}
+
+.audio-player {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 7.77778rem;
+  height: 1.33333rem;
+  padding: 0 0.44444rem;
+  background: #343536;
+  border-radius: 0.66667rem;
+}
+
+.audio-player .van-slider {
+  width: 8.17778rem;
+  border-radius: 0.13333rem;
+  margin: 0 0.31111rem 0 0.4rem;
+}
+
+.audio-player .progress-dot {
+  display: block;
+  width: 0.44444rem;
+  height: 0.44444rem;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.audio-player .duration-remain {
+  line-height: 1.33333rem;
+  font-size: 0.53333rem;
+  text-align: right;
+  color: #fff;
+}
+
+.pubBtn {
+  position: relative;
+  display: block;
+  float: left;
+  border: 0.26667rem solid #343536;
+  color: #343536;
+  height: 0;
+  width: 0;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.pubBtn i {
+  border-style: solid;
+  text-indent: -999999px;
+  position: absolute;
+  transition: all .3s;
+}
+
+.btn-play i {
+  border-color: transparent transparent transparent #23a8f2;
+  border-width: 0.26667rem 0 0.26667rem 0.35556rem;
+  width: 0;
+  top: -0.26667rem;
+  left: -0.06667rem;
+  height: 0;
+}
+
+.btn-pause i {
+  border-color: transparent #23a8f2;
+  border-width: 0 0.11111rem;
+  height: 0.33333rem;
+  width: 0.13333rem;
+  top: -0.17778rem;
+  left: -0.2rem;
+}
