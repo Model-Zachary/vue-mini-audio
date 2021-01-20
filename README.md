@@ -47,19 +47,19 @@ components: {
       name: "app",
       data() {
       	return {
-      	url:'xxx.com/music/いつも何度でも.mp3'
-      	coverAudioBg: "red",
-      	coverAudioBtnBg: "#fff",
-      	activeColor: "pink",
-      	inactiveColor: "#fff"
+      	   url:'xxx.com/music/いつも何度でも.mp3'
+      	   coverAudioBg: "red",
+      	   coverAudioBtnBg: "#fff",
+      	   activeColor: "pink",
+      	   inactiveColor: "#fff"
      	 };
     },
     methods: {
       	updataRecordPlay() {
-       	console.log('播放')
+       	   console.log('播放')
       	},
       	updataRecordPause() {
-        console.log('暂停播放')
+           console.log('暂停播放')
       	},
     }
   };
