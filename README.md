@@ -1,10 +1,19 @@
 # vue-mini-audio
 
 > 可在 PC 和 H5 页面使用的 mini 音频播放组件
-> 应用场景 → 不满足 audio 自带的标签样式
+> 应用场景 ：不满足 audio 自带的标签样式
 > 主要用到 `timeupdate` `play` `pause` `canplay` `loadedmetadata` 进行相关操作
 
 ## 使用说明
+
+- 安装 vue-mini-audio
+
+```javascript
+// 使用yarn
+yarn add vue-mini-audio
+// 使用npm
+npm i  vue-mini-audio
+```
 
 - 插件方式全局引入
 
