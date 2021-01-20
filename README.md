@@ -44,24 +44,24 @@ components: {
 
 <script>
   export default {
-      name: "app",
-      data() {
-      	return {
-      	   url:'xxx.com/music/いつも何度でも.mp3',
-      	   coverAudioBg: "red",
-      	   coverAudioBtnBg: "#fff",
-      	   activeColor: "pink",
-      	   inactiveColor: "#fff"
-     	 };
+    name: "app",
+    data() {
+      return {
+        url: "xxx.com/music/いつも何度でも.mp3",
+        coverAudioBg: "red",
+        coverAudioBtnBg: "#fff",
+        activeColor: "pink",
+        inactiveColor: "#fff",
+      };
     },
     methods: {
-      	updataRecordPlay() {
-       	   console.log('播放')
-      	},
-      	updataRecordPause() {
-           console.log('暂停播放')
-      	},
-    }
+      updataRecordPlay() {
+        console.log("播放");
+      },
+      updataRecordPause() {
+        console.log("暂停播放");
+      },
+    },
   };
 </script>
 ```
