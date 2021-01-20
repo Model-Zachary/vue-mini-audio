@@ -12,7 +12,7 @@
 // 使用yarn
 yarn add vue-mini-audio
 // 使用npm
-npm i  vue-mini-audio
+npm i vue-mini-audio
 ```
 
 - 插件方式全局引入
