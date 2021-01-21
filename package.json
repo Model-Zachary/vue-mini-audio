@@ -1,11 +1,11 @@
 {
   "name": "vue-mini-audio",
   "description": "基于vue开发-音频播放小组件",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "author": "model-zachary <model-zachary@qq.com>",
   "license": "MIT",
   "private": false,
-  "main": "./dist/vue-mini-audio.js",
+  "main": "dist/vue-mini-audio.js",
   "files": [
     "dist",
     "src"
