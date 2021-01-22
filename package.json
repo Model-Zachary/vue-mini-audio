@@ -5,7 +5,7 @@
   "author": "model-zachary <model-zachary@qq.com>",
   "license": "MIT",
   "private": false,
-  "main": "dist/vue-mini-audio.js",
+  "main": "dist/vue-mini-audio",
   "files": [
     "dist",
     "src"
