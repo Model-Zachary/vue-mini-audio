@@ -36,7 +36,7 @@ components: {
 },
 ```
 
-###基础用法
+### 基础用法
 
 ```html
 <template>
