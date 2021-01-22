@@ -17,7 +17,7 @@ npm i vue-mini-audio
 
 ### 引入
 
-> 插件形式
+> 插件方式
 
 ```javascript
 import Vue from "vue";
