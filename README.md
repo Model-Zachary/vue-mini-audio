@@ -1,4 +1,4 @@
-#vue-mini-audio
+# vue-mini-audio
 
 ### 介绍
 
@@ -6,7 +6,7 @@
 - 应用场景 ：不满足 audio 自带的标签样式
 - 主要用到 `timeupdate` `play` `pause` `loadedmetadata` 等进行相关操作
 
-###安装
+### 安装
 
 ```javascript
 // 使用yarn
