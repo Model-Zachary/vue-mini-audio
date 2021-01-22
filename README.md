@@ -1,12 +1,12 @@
-# vue-mini-audio
+#vue-mini-audio
 
-> 可在 PC 和 H5 页面使用的 mini 音频播放组件
-> 应用场景 ：不满足 audio 自带的标签样式
-> 主要用到 `timeupdate` `play` `pause` `canplay` `loadedmetadata` 进行相关操作
+### 介绍
 
-## 使用说明
+- 可在 PC/H5 页面使用的 mini 音频播放组件
+- 应用场景 ：不满足 audio 自带的标签样式
+- 主要用到 `timeupdate` `play` `pause` `loadedmetadata` 等进行相关操作
 
-- 安装 vue-mini-audio
+###安装
 
 ```javascript
 // 使用yarn
@@ -15,7 +15,9 @@ yarn add vue-mini-audio
 npm i vue-mini-audio
 ```
 
-- 插件方式全局引入
+### 引入
+
+> 插件形式
 
 ```javascript
 import Vue from "vue";
@@ -24,7 +26,7 @@ import vueMiniAudio from "vue-mini-audio";
 Vue.use(vueMiniAudio);
 ```
 
-- 组件形式局部引入
+> 组件形式
 
 ```javascript
 import vueMiniAudio from "vue-mini-audio";
@@ -34,20 +36,12 @@ components: {
 },
 ```
 
-- 使用组件
+###基础用法
 
 ```html
 <template>
   <div>
-    <vue-mini-audio
-      :url="url"
-      :coverAudioBg="coverAudioBg"
-      :coverAudioBtnBg="coverAudioBtnBg"
-      :inactiveColor="inactiveColor"
-      :activeColor="activeColor"
-      @play="updataRecordPlay"
-      @pause="updataRecordPause"
-    />
+    <vue-mini-audio :url="url" />
   </div>
 </template>
 
@@ -57,10 +51,6 @@ components: {
     data() {
       return {
         url: "xxx.com/music/いつも何度でも.mp3",
-        coverAudioBg: "red",
-        coverAudioBtnBg: "#fff",
-        activeColor: "pink",
-        inactiveColor: "#fff",
       };
     },
     methods: {
@@ -68,26 +58,26 @@ components: {
         console.log("播放");
       },
       updataRecordPause() {
-        console.log("暂停播放");
+        console.log("暂停");
       },
     },
   };
 </script>
 ```
 
-- 参数说明
+## API
 
-属性
+##### Props
 
-| 属性            | 类型   | 参数说明                | 默认值  |
-| --------------- | :----- | :---------------------- | :-----: |
-| url             | String | 音频播放地址            |    -    |
-| coverAudioBg    | String | 音频背景色              | #343536 |
-| coverAudioBtnBg | String | 音频播放/暂停按钮背景色 | #1989fa |
-| activeColor     | String | 播放状态进度条背景色    | #1989fa |
-| inactiveColor   | String | 未播放状态进度条背景色  |  #fff   |
+| 参数            | 说明                    | 类型   | 默认值  |
+| --------------- | :---------------------- | :----- | :-----: |
+| url             | 音频播放地址            | String |    -    |
+| coverAudioBg    | 音频背景色              | String | #343536 |
+| coverAudioBtnBg | 音频播放/暂停按钮背景色 | String | #1989fa |
+| activeColor     | 播放状态进度条背景色    | String | #1989fa |
+| inactiveColor   | 未播放状态进度条背景色  | String |  #fff   |
 
-事件
+##### 事件
 
 | 事件名称 | 参数说明 |
 | -------- | :------- |
