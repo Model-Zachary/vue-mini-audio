@@ -61,13 +61,13 @@ components: {
 
 ##### Props
 
-| 参数            | 说明                    | 类型   | 默认值  |
-| --------------- | :---------------------- | :----- | :-----: |
-| url             | 音频播放地址            | String |    -    |
-| coverAudioBg    | 音频背景色              | String | #343536 |
-| coverAudioBtnBg | 音频播放/暂停按钮背景色 | String | #1989fa |
-| activeColor     | 播放状态进度条背景色    | String | #1989fa |
-| inactiveColor   | 未播放状态进度条背景色  | String |  #fff   |
+| 参数            | 说明                   | 类型   | 默认值  |
+| --------------- | :--------------------- | :----- | :-----: |
+| url             | 播放地址 （必填）      | String |    -    |
+| coverAudioBg    | 背景色                 | String | #343536 |
+| activeColor     | 播放状态进度条背景色   | String | #1989fa |
+| inactiveColor   | 未播放状态进度条背景色 | String |  #fff   |
+| coverAudioBtnBg | 播放/暂停按钮背景色    | String | #1989fa |
 
 ##### Events
 
