@@ -53,14 +53,6 @@ components: {
         url: "xxx.com/music/いつも何度でも.mp3",
       };
     },
-    methods: {
-      updataRecordPlay() {
-        console.log("播放");
-      },
-      updataRecordPause() {
-        console.log("暂停");
-      },
-    },
   };
 </script>
 ```
@@ -77,9 +69,9 @@ components: {
 | activeColor     | 播放状态进度条背景色    | String | #1989fa |
 | inactiveColor   | 未播放状态进度条背景色  | String |  #fff   |
 
-##### 事件
+##### Events
 
-| 事件名称 | 参数说明 |
-| -------- | :------- |
-| play     | 播放回调 |
-| pause    | 暂停回调 |
+| 事件名 | 说明     |
+| ------ | :------- |
+| play   | 播放回调 |
+| pause  | 暂停回调 |
