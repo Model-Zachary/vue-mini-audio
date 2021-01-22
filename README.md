@@ -3,7 +3,7 @@
 ### 介绍
 
 - 可在 PC/H5 页面使用的 mini 音频播放组件
-- 应用场景 ：不满足 audio 自带的标签样式
+- 场景使用 ：不满足 audio 自带的标签样式
 - 主要用到 `timeupdate` `play` `pause` `loadedmetadata` 等进行相关操作
 
 ### 安装
