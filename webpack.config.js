@@ -54,8 +54,8 @@ module.exports = {
   },
   performance: {
     hints: false
-  },
-  devtool: "#eval-source-map"
+  }
+  // devtool: "#eval-source-map"
 };
 
 if (process.env.NODE_ENV === "production") {
@@ -83,5 +83,5 @@ if (process.env.NODE_ENV === "production") {
       minimize: true
     })
   ]);
-  module.exports.devtool = "#source-map";
+  // module.exports.devtool = "#source-map";
 }
