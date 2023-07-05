@@ -1,6 +1,12 @@
 {
-  "presets": [
-    ["env", { "modules": false }],
-    "stage-3"
+  "presets": [["env", { "modules": false }], "stage-3"],
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "vant",
+        "style": true // 样式是否也按需加载
+      }
+    ]
   ]
 }

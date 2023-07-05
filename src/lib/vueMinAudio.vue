@@ -51,16 +51,16 @@
 </template>
 <script>
 import { Slider, Toast } from "vant";
-import 'vant/lib/slider/style';
-import 'vant/lib/Toast/style';
+import "vant/lib/slider/style";
+import "vant/lib/Toast/style";
 export default {
-  name: 'vue-mini-audio',
+  name: "vue-mini-audio",
   components: { Slider },
   props: {
     /* 音乐链接 */
     url: {
       type: String,
-      default: '',
+      default: "",
     },
     /* 音频背景色 */
     coverAudioBg: {
@@ -81,7 +81,7 @@ export default {
     inactiveColor: {
       type: String,
       default: "",
-    }
+    },
   },
   data() {
     return {
@@ -100,23 +100,22 @@ export default {
       min = min < 10 ? `0${min}` : min;
       sec = sec < 10 ? `0${sec}` : sec;
       return `${hour}:${min}:${sec}`;
-    }
+    },
   },
   computed: {
     durationRemain() {
       if (this.progress > 0 && this.progress < 1) {
         return this.duration * (1 - this.progress);
       }
-      return 0;
-    }
+      return this.duration;
+    },
   },
   watch: {
     url(newVal, oldVal) {
       if (oldVal) this.reset();
-    }
+    },
   },
   methods: {
-
     handlePlay() {
       this.isPlaying = true;
       this.$emit("play");
@@ -134,8 +133,8 @@ export default {
 
     handleError() {
       Toast({
-        message: '播放出错',
-        position: 'top',
+        message: "播放出错",
+        position: "top",
       });
     },
     // 拖动
@@ -176,9 +175,9 @@ export default {
     syncProgressBar(evt) {
       const progress = evt.target.currentTime / this.duration;
       this.progress = progress > 1 ? 1 : progress;
-    }
-  }
-}
+    },
+  },
+};
 </script>
 <style>
 .audio-player {
